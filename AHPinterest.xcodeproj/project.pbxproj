@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		267B3AAB207F982500050100 /* ContentSquare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267B3AAA207F982500050100 /* ContentSquare.framework */; };
-		267B3AAC207F982500050100 /* ContentSquare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 267B3AAA207F982500050100 /* ContentSquare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26FAF7A82080BD2A00317DF6 /* ContentSquare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26FAF7A52080BD1A00317DF6 /* ContentSquare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A123E6E71EADD24E00D7565E /* AHTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E6E61EADD24E00D7565E /* AHTransitionDelegate.swift */; };
 		A123E6EB1EAEB0B100D7565E /* AHPinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E6EA1EAEB0B100D7565E /* AHPinCell.swift */; };
 		A123E6FC1EB0148700D7565E /* AHPopInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E6FB1EB0148700D7565E /* AHPopInteractive.swift */; };
@@ -80,6 +79,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		26FAF7A42080BD1A00317DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26FAF79F2080BD1A00317DF6 /* ContentSquare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A0BFC1D1F14FC9D004E88D6;
+			remoteInfo = ContentSquare;
+		};
+		26FAF7A62080BD1A00317DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26FAF79F2080BD1A00317DF6 /* ContentSquare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A0BFC261F14FC9D004E88D6;
+			remoteInfo = ContentSquareTests;
+		};
 		A168BFDC1E888DDD00A87E03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A173771D1E887F9600462EE1 /* Project object */;
@@ -96,7 +109,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				267B3AAC207F982500050100 /* ContentSquare.framework in Embed Frameworks */,
+				26FAF7A82080BD2A00317DF6 /* ContentSquare.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,7 +117,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		267B3AAA207F982500050100 /* ContentSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContentSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FAF79F2080BD1A00317DF6 /* ContentSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ContentSquare.xcodeproj; path = ../../ContentSquare.xcodeproj; sourceTree = "<group>"; };
 		35F5D4781FD6AD2A00B64688 /* ContentSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContentSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A123E6E61EADD24E00D7565E /* AHTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHTransitionDelegate.swift; sourceTree = "<group>"; };
 		A123E6EA1EAEB0B100D7565E /* AHPinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHPinCell.swift; sourceTree = "<group>"; };
@@ -192,13 +205,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267B3AAB207F982500050100 /* ContentSquare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26FAF7A02080BD1A00317DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26FAF7A52080BD1A00317DF6 /* ContentSquare.framework */,
+				26FAF7A72080BD1A00317DF6 /* ContentSquareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		35F5D4761FD6AD2A00B64688 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +353,7 @@
 		A173771C1E887F9600462EE1 = {
 			isa = PBXGroup;
 			children = (
-				267B3AAA207F982500050100 /* ContentSquare.framework */,
+				26FAF79F2080BD1A00317DF6 /* ContentSquare.xcodeproj */,
 				A17377271E887F9600462EE1 /* AHPinterest */,
 				A17377441E88821D00462EE1 /* Supporting Files */,
 				A168BFD81E888DDD00A87E03 /* AHPinterestTests */,
@@ -609,7 +630,6 @@
 					};
 					A17377241E887F9600462EE1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = QVP47S2RHS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -625,6 +645,12 @@
 			mainGroup = A173771C1E887F9600462EE1;
 			productRefGroup = A17377261E887F9600462EE1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26FAF7A02080BD1A00317DF6 /* Products */;
+					ProjectRef = 26FAF79F2080BD1A00317DF6 /* ContentSquare.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A17377241E887F9600462EE1 /* AHPinterest */,
@@ -632,6 +658,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26FAF7A52080BD1A00317DF6 /* ContentSquare.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ContentSquare.framework;
+			remoteRef = 26FAF7A42080BD1A00317DF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26FAF7A72080BD1A00317DF6 /* ContentSquareTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ContentSquareTests.xctest;
+			remoteRef = 26FAF7A62080BD1A00317DF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A168BFD51E888DDD00A87E03 /* Resources */ = {
@@ -818,6 +861,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/CollectorSDK-aioucoecfrsjvogqpujbyasgoofq/Build/Products/Debug-iphonesimulator";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -868,6 +912,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/CollectorSDK-aioucoecfrsjvogqpujbyasgoofq/Build/Products/Debug-iphonesimulator";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -891,11 +936,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QVP47S2RHS;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../../Carthage/Build/iOS",
-					"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/CollectorSDK-aioucoecfrsjvogqpujbyasgoofq/Build/Products/Debug-iphonesimulator",
-				);
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../Carthage/Build/iOS";
 				INFOPLIST_FILE = AHPinterest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs.ahpinterest;
@@ -912,11 +954,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QVP47S2RHS;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../../Carthage/Build/iOS",
-					"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/CollectorSDK-aioucoecfrsjvogqpujbyasgoofq/Build/Products/Debug-iphonesimulator",
-				);
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../Carthage/Build/iOS";
 				INFOPLIST_FILE = AHPinterest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs.ahpinterest;
